@@ -42,6 +42,16 @@ const tileTwo = {
     "type": "tile",
 		"content": [
 			{
+				"type": "image",
+				"src": "https://www.entreprises.cci-paris-idf.fr/documents/20152/0/Logo+CCI+Paris+2021+%281%29.jpg",
+				"alt": "CCI Logo",
+				"width": 100,
+				"onClick": {
+					"type": "SERVERLESS_ACTION_HOOK",
+					"serverlessFunction": "my-custom-function"
+				}
+			},
+			{
 				"type": "heading",
 				"text": "Documents"
 			},
