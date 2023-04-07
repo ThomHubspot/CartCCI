@@ -8,6 +8,16 @@ exports.main = async (context = {}, sendResponse) => {
   const tileOne = {
     "type": "tile",
     "content": [
+	    {
+				"type": "image",
+				"src": "https://www.entreprises.cci-paris-idf.fr/documents/20152/0/Logo+CCI+Paris+2021+%281%29.jpg",
+				"alt": "CCI Logo",
+				"width": 300,
+				"onClick": {
+					"type": "SERVERLESS_ACTION_HOOK",
+					"serverlessFunction": "my-custom-function"
+				}
+			},
       {
         "type": "heading",
         "text": "Avancement"
@@ -41,16 +51,6 @@ exports.main = async (context = {}, sendResponse) => {
 const tileTwo = {
     "type": "tile",
 		"content": [
-			{
-				"type": "image",
-				"src": "https://www.entreprises.cci-paris-idf.fr/documents/20152/0/Logo+CCI+Paris+2021+%281%29.jpg",
-				"alt": "CCI Logo",
-				"width": 100,
-				"onClick": {
-					"type": "SERVERLESS_ACTION_HOOK",
-					"serverlessFunction": "my-custom-function"
-				}
-			},
 			{
 				"type": "heading",
 				"text": "Documents"
