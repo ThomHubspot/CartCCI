@@ -10,8 +10,8 @@ exports.main = async (context = {}, sendResponse) => {
     "content": [
 	    {
 				"type": "image",
-				"src": "https://www.entreprises.cci-paris-idf.fr/documents/20152/0/Logo+CCI+Paris+2021+%281%29.jpg",
-				"alt": "CCI Logo",
+				"src": "https://www.lafrenchfab.fr/storage/2022/02/logo-FR.jpg",
+				"alt": "Cometic",
 				"width": 300,
 				"onClick": {
 					"type": "SERVERLESS_ACTION_HOOK",
